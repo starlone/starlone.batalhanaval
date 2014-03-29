@@ -9,7 +9,7 @@
         
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.min.css" />
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/3.1.1/cerulean/bootstrap.min.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
     <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="http://codeorigin.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
@@ -21,10 +21,10 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     
-    <link href="estilo.css" rel="stylesheet" type="text/css" />
+    <link href="estilo.css" rel="stylesheet" type="text/css" />    
 
-    <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/batalhanaval.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>    
 </head>
 <body>
     <div class="navbar navbar-default" role="navigation">        
@@ -40,9 +40,9 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a class="newgame">Novo Jogo</a></li>
-	                <li><a class="settings">Opcões</a></li>
-	                <li><a class="help">Ajuda</a></li>
+                    <li><a href="#" class="newgame">Novo Jogo</a></li>
+	                <li><a href="#" class="settings">Opcões</a></li>
+	                <li><a href="#" class="help">Ajuda</a></li>
                 </ul>
             </div>
         </div>
@@ -50,15 +50,19 @@
         
 	<div class="container">
 		<div class="row">
-		    <div class="col-md-7">
+		    <div class="col-md-4">
 			    <div id="menu">
-				    <ul>
-				    	<li><span class="newgame">Novo Jogo</span></li>
-				        <li><span class="settings">Opcões</span></li>
-				        <li><span class="help">Ajuda</span></li>
+				    <ul class="nav nav-pills nav-stacked">
+				    	<li><a href="#" class="newgame">Novo Jogo</a></li>
+				        <li><a href="#" class="settings">Opcões</a></li>
+				        <li><a href="#" class="help">Ajuda</a></li>
 				    </ul>		    
-			    </div>
-			    <div id="botoes"></div>
+			    </div>			    
+		    </div>
+	    </div>
+		<div class="row">
+		    <div class="col-md-7">
+		        <div id="botoes"></div>
 		    </div>		    			
 		</div>
 			
