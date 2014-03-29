@@ -1,8 +1,3 @@
-$(document).ready(function(){
-	$(".newgame").click(newGame);						   
-	$("#home").click(paginaInicial);
-});
-
 function paginaInicial(){
     $("#menu").show();
     $("#botoes").empty();						   
@@ -61,3 +56,8 @@ function verificaGuess(){
 	$(this).removeClass("botao");
 	$(this).addClass("botao_pressed");
 }
+
+$(document).ready(function(){
+	$(".newgame").click(newGame);						   
+	$("#home").click(paginaInicial);
+});
