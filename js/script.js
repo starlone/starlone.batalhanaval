@@ -3,7 +3,8 @@ function paginaInicial(){
     $("#botoes").empty();						   
 }
 
-function newGame(){
+function newGame(e){
+	e.preventDefault();
     game = new BatalhaNaval();    
     game.startGame();    
     adicionaBotoes();    
@@ -57,7 +58,7 @@ function verificaGuess(){
 	$(this).addClass("botao_pressed");
 }
 
-$(document).ready(function(){
+$(document).ready(function(){	
 	$(".newgame").click(newGame);						   
 	$("#home").click(paginaInicial);
 });
