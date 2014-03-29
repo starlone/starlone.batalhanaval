@@ -1,53 +1,5 @@
 @charset "utf-8";
-body {
-	/*background-color: #F2F2F2;*/
-	background-color:#0099FF;
-	font: Arial, Helvetica, sans-serif;
-	margin: auto;
-}
-
-#topo{
-	/*background-color: #E8E7E7;*/
-	background-color:#FFCC66;
-	padding: 4px;
-	margin: 0px;
-}
-
-#menu_topo li{
-	display:inline;
-	margin: 0px auto;
-	padding:5px 12px;
-	font-size:20px;
-}
-
-#menu_topo li span:hover {
-	color:#0066FF;
-	cursor: pointer;
-}
-
-#pagina {
-	/*background-color:#FFFFFF;*/
-	width: 80%;
-	margin: 0px auto;
-}
-
-#menu {
-	margin:100px auto;
-	height: 100%;
-	text-align:center;	
-	font-size:24px;
-}
-
-#menu li {
-	list-style: none;
-	padding: 8px;
-}
-
-#menu li span:hover {
-	color:#CCCCCC;
-	cursor:pointer;	
-}
-
+body { background-color:#0099FF;}
 .botao {	
 	margin:5px 3px;
 	padding: 1px 6px;
@@ -56,28 +8,12 @@ body {
 	background-color:#FFFFFF;
 	opacity: 0.8;
 }
-
-.botao:hover{
-	opacity: 0.5;
-}
-
+.botao:hover{opacity: 0.5;}
 .botao_pressed{
 	cursor:default;
 	margin:5px 3px;
 	padding: 1px 6px;
 	border: inset;
 }
-
-#tabela {
-	margin: 90px auto;
-
-}
-
-#tabela tr{
-	font-size: 20px;
-	cursor: crosshair;
-}
-
-#tabela td{	
-	padding:10px;	
-}
+#tabela tr{cursor: crosshair;}
+#tabela td{padding:10px;}
