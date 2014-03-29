@@ -141,14 +141,14 @@ BatalhaNaval.prototype.initLocation = function(ship){
     lista = new Array();
     if(vert){			
 	// Vertical
-	for (i = 0; i < ship.length; i++) {
+	for (var i = 0; i < ship.length; i++) {
 	    s = (line+i+"") + (col + "");								
 	    lista.push(s);
 	}
     }
     else{			
 	// Horizontal
-	for (i = 0; i < ship.length; i++) {
+	for (var i = 0; i < ship.length; i++) {
 	    s = (line + "") + (col+i+"");								
 	    lista.push(s);
 	}
