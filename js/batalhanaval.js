@@ -76,7 +76,7 @@ BatalhaNaval.prototype.checkCellOccupied = function (guess){
 BatalhaNaval.prototype.checkDirecionOccupied = function(ship,vert,line,col){
     s = "" + (line) + (col);
 					
-    for ( aux2 = 0; aux2 < this.shipLength; aux2++) {
+    for ( var aux2 = 0; aux2 < this.shipLength; aux2++) {
 	if(vert)
 	    s = ""+(line+aux2) + (col);
 	else
