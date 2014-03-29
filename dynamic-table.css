@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+.cel .x{
+    color: blue;
+    float:left;
+}
+.cel .y{
+    color: red;
+    float:right;
+}
