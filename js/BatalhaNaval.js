@@ -11,12 +11,12 @@ function removeItem(lista,item){
 		}		
 	}
 	return lista;
-}
+};
 
 function Ship(tam){
 	this.location = new Array();
 	this.length = tam;
-}
+};
 
 Ship.prototype.removeCell = function(cell){
 	after = this.location.length;
@@ -26,7 +26,7 @@ Ship.prototype.removeCell = function(cell){
 		return true;
 	else
 		return false;
-}
+};
 
 function BatalhaNaval () {
 	this.ships = new Array();
@@ -34,24 +34,24 @@ function BatalhaNaval () {
 	this.shipLength = 3;
 	this.columns = 7;
 	this.lines = 7;
-}
+};
 
 BatalhaNaval.prototype.setConfig = function (numOfShips,shipLength,columns,lines){
 	this.numOfShips = numOfShips;
 	this.shipLength = shipLength;
 	this.columns = columns;
 	this.lines = lines;	
-}
+};
 
 BatalhaNaval.prototype.endGame = function (){
 	if(!this.ships.length) return true;	
 	return false;
-}
+};
 
 BatalhaNaval.prototype.checkGuess = function(guess){		
 		wreckedShip = null;
 		flag = false;
-		for (z =0; z< this.ships.length;z++) {			
+		for (var z =0; z< this.ships.length;z++) {			
 			flag = this.ships[z].removeCell(guess);			
 			if(this.ships[z].location.length == 0)
 				wreckedShip = this.ships[z];
@@ -61,7 +61,7 @@ BatalhaNaval.prototype.checkGuess = function(guess){
 		if (wreckedShip != null)
 			this.ships = removeItem(this.ships,wreckedShip);
 		return flag;
-}
+};
 
 
 BatalhaNaval.prototype.checkCellOccupied = function (guess){
@@ -71,7 +71,7 @@ BatalhaNaval.prototype.checkCellOccupied = function (guess){
 	    return true;
     }
     return false;
-}
+};
 
 BatalhaNaval.prototype.checkDirecionOccupied = function(ship,vert,line,col){
     s = "" + (line) + (col);
@@ -86,7 +86,7 @@ BatalhaNaval.prototype.checkDirecionOccupied = function(ship,vert,line,col){
 	}
     }		
     return false;
-}
+};
 
 BatalhaNaval.prototype.initLocation = function(ship){
     col = this.columns;
@@ -154,7 +154,7 @@ BatalhaNaval.prototype.initLocation = function(ship){
 	}
     }
     ship.location = lista;
-}
+};
 
 BatalhaNaval.prototype.createShips = function (){
     this.ships = new Array();
@@ -164,9 +164,9 @@ BatalhaNaval.prototype.createShips = function (){
 	this.initLocation(ship);
 	this.ships.push(ship);
     }	
-}
+};
 
 BatalhaNaval.prototype.startGame = function(){
 	this.createShips();
-}
+};
 

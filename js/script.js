@@ -16,9 +16,9 @@ function adicionaBotoes(){
   $("#menu").hide();
   $("#botoes").empty();
   $("#botoes").append("<table id='tabela'>");
-  for(i = 0; i <= l; i++){
+  for(var i = 0; i <= l; i++){
     var linha = $("<tr>");
-    for(j=0; j <= c; j++){
+    for(var j=0; j <= c; j++){
       if(i == 0 && j!=0){       
         var th = $("<th>"+j+"</th>");                   
         linha.append(th);
